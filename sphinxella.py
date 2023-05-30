@@ -106,7 +106,7 @@ class FaceBoom(object):
         proxystatus = gr+self.useProxy+wi+"["+gr+"ON"+wi+"]" if self.useProxy  else yl+"["+rd+"OFF"+yl+"]"
         print(gr+"""
 ==================================
-[---]        """+wi+"""JOKER BF"""+gr+"""        [---]
+[---]        """+wi+"""Sphinxella's AI"""+gr+"""        [---]
 ==================================
 [---]  """+wi+"""BruteForce Facebook  """+gr+""" [---]
 ==================================
@@ -146,7 +146,7 @@ class FaceBoom(object):
                 write("  [+] Successfully updated :)\n")
 
 parse = optparse.OptionParser(wi+"""
-Usage: python ./joker.py [OPTIONS...]
+Usage: python ./sphinxella.py [OPTIONS...]
 echo "https://github.com/LOLsphinx/sphinxella"
 echo "Iloveyou xella!!!"   
 
