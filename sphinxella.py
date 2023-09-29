@@ -70,11 +70,11 @@ class FaceBoom(object):
     def get_profile_id(self, target_profile):
         try:
             print(gr+"\n["+wi+"*"+gr+"] geting target Profile Id... please wait"+wi)
-            idre = re.compile('"entity_id":"([0-9]+)"')
+            idre = re.compile('(?<="userID":").*?(?=")')
             con = requests.get(target_profile).text
-            idis = idre.findall(con)
-            print(wi+"\n["+gr+"+"+wi+"]"+gr+" Target Profile"+wi+" ID: "+yl+idis[0]+wi)
-        except IndexError:
+            idis = idre.search(con).group()
+            print(wi+"\n["+gr+"+"+wi+"]"+gr+" Target Profile"+wi+" ID: "+yl+idis+wi)
+        except Exception:
             errMsg("Please Check Your Victim's Profile URL")
             sys.exit(1)
 
