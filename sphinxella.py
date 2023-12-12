@@ -145,8 +145,8 @@ class FaceBoom(object):
 
 parse = optparse.OptionParser(wi+"""
 Usage: python ./sphinxella.py [OPTIONS...]
-echo "https://github.com/LOLsphinx/sphinxella"
-echo "Iloveyou xella!!!"   
+https://github.com/LOLsphinx/sphinxella
+Iloveyou xella!!!   
 
 Examples:
         |
