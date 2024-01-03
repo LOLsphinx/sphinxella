@@ -1,2 +1,2 @@
-requests
-mechanize
+requests==2.31.0
+mechanize==0.4.9
